@@ -228,7 +228,7 @@ class Form(QMainWindow):
 	def isJson(self, myjson):
 		try:
 			json_object = json.loads(myjson)
-		except ValueError, e:
+		except ValueError:
 			return False
 		return True
 
